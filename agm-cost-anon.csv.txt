@@ -1,0 +1,7 @@
+LineItemType,UsageStartDate,UsageEndDate,ServiceCode,BlendedCost,CurrencyCode
+Usage,2024-12-01,2024-12-01,EC2-GPU,13800,GBP
+Usage,2024-12-01,2024-12-01,RDS-Aurora,6000,GBP
+Usage,2024-12-01,2024-12-01,DataTransfer,3000,GBP
+Usage,2024-12-01,2024-12-01,ElastiCache,1000,GBP
+Usage,2024-12-01,2024-12-01,S3-EBS,1000,GBP
+Usage,2024-12-01,2024-12-01,Other,1700,GBP
