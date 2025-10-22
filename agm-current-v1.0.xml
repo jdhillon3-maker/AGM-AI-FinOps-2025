@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate/3.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengroup.org/xsd/archimate/3.0/ http://www.opengroup.org/xsd/archimate/3.0/archimate3_Diagram.xsd">
+  <name>AGM Current-State Architecture v1.0</name>
+  <elements>
+    <element identifier="id-business-1" xsi:type="BusinessProcess">
+      <name>Trade European Equities</name>
+    </element>
+    <element identifier="id-app-1" xsi:type="ApplicationComponent">
+      <name>FPGA Order Gateway</name>
+    </element>
+    <element identifier="id-app-2" xsi:type="ApplicationComponent">
+      <name>Spark-ML TCA Engine</name>
+    </element>
+    <element identifier="id-tech-1" xsi:type="Node">
+      <name>AWS Prod Account</name>
+    </element>
+    <element identifier="id-tech-2" xsi:type="Node">
+      <name>Colo FPGA Rack</name>
+    </element>
+  </elements>
+  <relationships>
+    <relationship identifier="rel-1" source="id-business-1" target="id-app-1" xsi:type="Serving"/>
+    <relationship identifier="rel-2" source="id-app-1" target="id-tech-1" xsi:type="Serving"/>
+    <relationship identifier="rel-3" source="id-app-2" target="id-tech-1" xsi:type="Serving"/>
+  </relationships>
+</model>
